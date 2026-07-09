@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "PowerShell(java -version)",
+      "PowerShell(echo $env:JAVA_HOME)",
+      "PowerShell(.\\\\gradlew.bat build --no-daemon)",
+      "WebFetch(domain:docs.fabricmc.net)",
+      "PowerShell(javap -cp build\\\\libs\\\\unluckysmp-welcomer-1.0.0.jar unlucky.welcomer.UnluckySMPWelcomer unlucky.welcomer.mixin.PlayerListMixin)"
+    ]
+  }
+}

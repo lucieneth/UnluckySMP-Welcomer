@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "unluckysmp-welcomer",
+	"version": "${version}",
+	"name": "UnluckySMP Welcomer",
+	"description": "Replaces the default join message with a custom UnluckySMP welcome.",
+	"authors": [
+		"Lucien",
+		"Claude"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/unluckysmp-welcomer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"unlucky.welcomer.UnluckySMPWelcomer"
+		],
+		"client": [
+			"unlucky.welcomer.client.UnluckySMPWelcomerClient"
+		]
+	},
+	"mixins": [
+		"unluckysmp-welcomer.mixins.json",
+		{
+			"config": "unluckysmp-welcomer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25"
+	}
+}

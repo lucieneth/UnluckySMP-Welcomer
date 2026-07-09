@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "unlucky.welcomer.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"CommandsMixin",
+		"PlayerListMixin",
+		"ServerGamePacketListenerImplMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
