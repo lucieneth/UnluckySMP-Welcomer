@@ -26,7 +26,7 @@ public class UnluckySMPWelcomer implements ModInitializer {
 		// Proceed with mild caution.
 
 		CONFIG = WelcomerConfig.load();
-		LOGGER.info("UnluckySMP Welcomer loaded.");
+		LOGGER.info("Unlucky Welcomer loaded.");
 	}
 
 	public static Identifier id(String path) {
